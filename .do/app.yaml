@@ -11,6 +11,7 @@ services:
     source_dir: webapp
     build_command: npm run build
     run_command: npm run start
+    http_port: 3000
     routes:
       - path: /
 
@@ -24,5 +25,6 @@ services:
     source_dir: api
     build_command: npm run build
     run_command: npm run start
+    http_port: 4000
     routes:
       - path: /graphql
