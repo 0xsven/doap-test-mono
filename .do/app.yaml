@@ -1,0 +1,22 @@
+name: doap-test
+
+services:
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: 0xsven/doap-test-mono
+      branch: master
+      deploy_on_push: true
+    source_dir: api
+    routes:
+      - path: /graphql
+
+  - name: webapp
+    environment_slug: node-js
+    github:
+      repo: 0xsven/doap-test-mono
+      branch: master
+      deploy_on_push: true
+    source_dir: webapp
+    routes:
+      - path: /
