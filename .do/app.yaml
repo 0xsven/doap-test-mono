@@ -1,19 +1,6 @@
 name: doap-test
 
 services:
-  - name: api
-    environment_slug: node-js
-    instance_size_slug: basic-xxs
-    github:
-      repo: 0xsven/doap-test-mono
-      branch: master
-      deploy_on_push: true
-    source_dir: api
-    build_command: npm run build
-    run_command: npm run start
-    routes:
-      - path: /graphql
-
   - name: webapp
     environment_slug: node-js
     instance_size_slug: basic-xxs
@@ -26,3 +13,16 @@ services:
     run_command: npm run start
     routes:
       - path: /
+
+  - name: api
+    environment_slug: node-js
+    instance_size_slug: basic-xxs
+    github:
+      repo: 0xsven/doap-test-mono
+      branch: master
+      deploy_on_push: true
+    source_dir: api
+    build_command: npm run build
+    run_command: npm run start
+    routes:
+      - path: /graphql
