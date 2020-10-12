@@ -2,7 +2,7 @@ name: doap-test
 
 services:
   - name: api
-    environment_slug: node-jsss
+    environment_slug: node-js
     instance_size_slug: basic-xxs
     github:
       repo: 0xsven/doap-test-mono
