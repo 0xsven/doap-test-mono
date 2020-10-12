@@ -1,0 +1,4 @@
+node_modules
+.nexus
+.env.local
+.tmp_build
